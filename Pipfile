@@ -12,10 +12,11 @@ flask-migrate = "*"
 marshmallow = "*"
 paystackapi = "*"
 python-dotenv = "*"
-sentry-sdk = {extras = ["flask"], version = "*"}
+sentry-sdk = {extras = ["flask"] }
 gunicorn = "*"
 psycopg2-binary = "*"
 solana = "*"
+base58 = "*"
 
 [dev-packages]
 
