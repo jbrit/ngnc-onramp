@@ -1,6 +1,7 @@
 from flask import Flask
 import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
+from flask_cors import CORS
 from flask_restful import abort
 from flask_migrate import Migrate
 from webargs.flaskparser import parser
@@ -29,4 +30,5 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
     docs.init_app(app)
+    CORS(app)
     return app

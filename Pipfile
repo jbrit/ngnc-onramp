@@ -17,6 +17,7 @@ gunicorn = "*"
 psycopg2-binary = "*"
 solana = "*"
 base58 = "*"
+flask-cors = "*"
 
 [dev-packages]
 
